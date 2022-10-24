@@ -1,5 +1,10 @@
 package ru.netology;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@Data
 public class Radio {
     private int channelCount = 10;
     private int minChannel = 0;
@@ -8,10 +13,6 @@ public class Radio {
     private int minVolume = 0;
     private int maxVolume = 100;
     private int currentVolume = minVolume;
-
-    public Radio() {
-
-    }
 
     public Radio(int channelCount) {
         if (channelCount >= 2) {
